@@ -64,7 +64,8 @@ Este projeto é um ótimo exercício para entender:
 
 ## **👨‍💻 Autores**
 
-* **\[Thiago Pereira\]** \- \[[https://github.com/eupereirathiago](https://github.com/eupereirathiago)\]  
+* **\[Thiago Pereira\]** \- \[[https://github.com/eupereirathiago](https://github.com/eupereirathiago)\]
+* * **\[Dandara Gomez\]** \- \[[https://github.com/DandaraGomez]
 
 
 ## **📄 Licença**
