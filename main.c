@@ -5,8 +5,9 @@
 int main(int argc, char const *argv[]) {
     
     int novo_num = 0;
-    int n = 5;
-    int capacidade = 6;
+    int n = 10;
+    int capacidade = 11;
+    
 
     srand(time(NULL));
 
