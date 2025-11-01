@@ -28,22 +28,7 @@ int main(int argc, char const *argv[]) {
     }
     printf("\n");
 
-    // ETAPA 2: Reorganizar
-    int i, key, j;
-    for (i = 1; i < n; i++) {
-        key = vetor[i];
-        for (j = i - 1; j >= 0 && vetor[j] > key; j--) {
-            vetor[j + 1] = vetor[j];
-        }
-        vetor[j + 1] = key;
-    }
-
-    printf("\n--- Vetor Ordenado ---\n");
-    for (int i = 0; i < n; i++) {
-        printf("%d ", vetor[i]);
-    }
-    printf("\n");
-
+int i, key, j;
 // ETAPA 3: Inserir novo número
     printf("\nDigite o numero que deseja inserir: ");
     scanf("%d", &novo_num);
@@ -54,11 +39,27 @@ int main(int argc, char const *argv[]) {
     vetor[j + 1] = novo_num;
     n++;
 
-    printf("\n--- Vetor Final ---\n");
-    for (int i = 0; i < n; i++) { // n = 6
-        printf("%d ", vetor[i]);
+    // printf("\n--- Vetor Final ---\n");
+    // for (int i = 0; i < n; i++) { // n = 6
+    //     printf("%d ", vetor[i]);
+    // }
+
+    printf("\n");
+
+        // ETAPA 2: Reorganizar
+    
+    for (i = 1; i < n; i++) {
+        key = vetor[i];
+        for (j = i - 1; j >= 0 && vetor[j] > key; j--) {
+            vetor[j + 1] = vetor[j];
+        }
+        vetor[j + 1] = key;
     }
 
+    printf("\n--- Numero inserido e Vetor Ordenado ---\n");
+    for (int i = 0; i < n; i++) {
+        printf("%d ", vetor[i]);
+    }
     printf("\n");
 
     free(vetor);
